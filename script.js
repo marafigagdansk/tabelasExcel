@@ -29,3 +29,10 @@ function adicionarItem(){
     document.getElementById("valor").value = "";
     document.getElementById("quant").value = "";
 }
+
+function exportToExcel() {
+    var tabela = document.getElementById("tabela");
+    var nomeArq = "tabela_produtos.xlsx";
+    var wb =    XLSX.utils.table_to_clock(tabela, {sheet: "Tabela de produtos"});
+    XLSX.writeFile(wb, nomeArq);
+}
