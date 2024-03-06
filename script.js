@@ -23,4 +23,9 @@ function adicionarItem(){
     celulaNome.innerHTML = nome;
     celulaValor.innerHTML = valor;
     celulaQuant.innerHTML = quant;
+
+    // limpar campos
+    document.getElementById("nome").value = "";
+    document.getElementById("valor").value = "";
+    document.getElementById("quant").value = "";
 }
